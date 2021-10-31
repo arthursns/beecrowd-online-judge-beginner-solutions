@@ -8,14 +8,12 @@ hf = int(hf)
 mf = int(mf)
 
 mit = (hi*60) + mi
-print(mit)
 
 mft = (hf*60) + mf
-print(mft)
 
 if(mit > mft):
-    dHora = ((1440 - mft) + mit)//60
-    dMin = ((1440 - mft) + mit) - (dHora * 60)
+    dHora = ((1440 - mit) + mft)//60
+    dMin = ((1440 - mit) + mft) - (dHora * 60)
 
 elif(mft > mit):
     dHora = (mft - mit)//60
