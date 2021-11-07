@@ -1,32 +1,32 @@
 valor = float(input())
 
 if 0<=valor<=400.00:
-    valorNovo = valor * 1,15
+    valorNovo = valor * 1.15
     reajuste = valorNovo - valor
-    print("Novo salario: " + str(valorNovo))
-    print("Reajuste ganho: " + str(reajuste))
-    print("Em percentual: 15 %")
+    porcentagem = 15
+
 elif(400.01<=valor<=800.00):
-    valorNovo = valor * 1,12
+    valorNovo = valor * 1.12
     reajuste = valorNovo - valor
-    print("Novo salario: " + str(valorNovo))
-    print("Reajuste ganho: " + str(reajuste))
-    print("Em percentual: 12 %")
+    porcentagem = 12
+
 elif(800.01<=valor<=1200):
-    valorNovo = valor * 1,1
+    valorNovo = valor * 1.1
     reajuste = valorNovo - valor
-    print("Novo salario: " + str(valorNovo))
-    print("Reajuste ganho: " + str(reajuste))
-    print("Em percentual: 10 %")
+    porcentagem = 10
+
 elif(1200.01<=valor<=2000):
-    valorNovo = valor * 1,7
+    valorNovo = valor * 1.07
     reajuste = valorNovo - valor
-    print("Novo salario: " + str(valorNovo))
-    print("Reajuste ganho: " + str(reajuste))
-    print("Em percentual: 7 %")
+    porcentagem = 7
+
 elif(valor>=2000):
-    valorNovo = valor * 1,4
+    valorNovo = valor * 1.04
     reajuste = valorNovo - valor
-    print("Novo salario: " + str(valorNovo))
-    print("Reajuste ganho: " + str(reajuste))
-    print("Em percentual: 4 %")
+    porcentagem = 4
+
+valorNovo = format(valorNovo, ".2f")
+reajuste = format(reajuste, ".2f")
+print("Novo salario: " + str(valorNovo))
+print("Reajuste ganho: " + str(reajuste))
+print("Em percentual: " + str(porcentagem) + " %")
